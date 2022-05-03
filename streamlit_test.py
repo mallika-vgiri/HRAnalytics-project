@@ -22,3 +22,6 @@ st.title('Uber pickups in NYC')
 st.write("Hello")
 
 hour_to_filter = st.slider('hour', 0, 23, 17)
+
+new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
+st.markdown(new_title, unsafe_allow_html=True)
