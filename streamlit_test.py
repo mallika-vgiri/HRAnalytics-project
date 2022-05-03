@@ -11,13 +11,13 @@ st.write("Predict whether an employee is at risk of leaving the organization usi
 st.image("https://blog.mavenlink.com/hubfs/employee-turnover-blog-image.png")
 
 with st.form(key='my_form'):
-    satisfaction_level = st.number_input('What is the employees satisfaction level? (Enter upto 2 decimals)', 0)
+    satisfaction_level = st.number_input('What is the employees satisfaction level? (Enter upto 2 decimals)', 0.50)
     last_evaluation = st.number_input('Number of years since the employees last evaluation',0)
     number_project = st.number_input('Number of projects the employee has worked on',0)
     avg_monthly_hours = st.number_input('On an average, how many hours did the employee work each month?',0)
     time_spend_company = st.number_input('How many years has the employee spent in the company?',0)
-    work_accident = st.text_input('Has the employee encountered a work accident during their tenure?')
-    promotion_last_5years = st.text_input('Has the employee been promoted in the last 5 years?')
+    work_accident = st.selectbox('Has the employee encountered a work accident during their tenure?',('Yes','No'))
+    promotion_last_5years = st.selectbox('Has the employee been promoted in the last 5 years?',('Yes','No'))
     submit_button = st.form_submit_button(label='Submit')
 
 def txt_num(val):
