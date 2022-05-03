@@ -21,10 +21,6 @@ df=pd.DataFrame(data=d,index=[0])
 
 st.write(df.head())
 
-st.form_submit_button(label="Submit", help=None, on_click=None, args=None, kwargs=None)
-#new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
-#st.markdown(hour_to_filter, unsafe_allow_html=True)
-
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
