@@ -15,7 +15,7 @@ satisfaction_level = st.slider('satisfaction level', 0, 23, 17)
 last_evaluation = st.slider('last evaluation',0,50)
 number_of_projects = st.slider('number of projects',0,10)
 
-d = ('satisfaction_level':satisfaction_level,'last_evaluation':last_evaluation,'number_project':number_project)
+d = {'satisfaction_level':satisfaction_level,'last_evaluation':last_evaluation,'number_project':number_project}
 df=pd.DataFrame(data=d,index=[0])
 
 st.write(df.head())
