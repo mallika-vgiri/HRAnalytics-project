@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 import time
 import pickle
-import sklearn
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_predict, cross_val_score
 
 st.title('Employee Attrition Predictor')
 st.write("Predict whether an employee is at risk of leaving the organization using this Employee Attrition Predictor tool. This tool, developed using advanced machine learning techniques, predicts employee attrition with over 98% accuracy")
