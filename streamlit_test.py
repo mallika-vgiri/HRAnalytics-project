@@ -10,22 +10,20 @@ st.write("Predict whether an employee is at risk of leaving the organization usi
 
 st.image("https://blog.mavenlink.com/hubfs/employee-turnover-blog-image.png")
 
-
-satisfaction_level = st.slider('satisfaction level', 0, 23, 17)
-last_evaluation = st.slider('last evaluation',0,50)
-number_project = st.slider('number of projects',0,10)
+with st.form(key='my_form'):
+    satisfaction_level = st.slider('satisfaction level', 0, 23, 17)
+    last_evaluation = st.slider('last evaluation',0,50)
+    number_project = st.slider('number of projects',0,10)
+    submit_button = st.form_submit_button(label='Submit')
 
 d = {'satisfaction_level':satisfaction_level,'last_evaluation':last_evaluation,'number_project':number_project}
 df=pd.DataFrame(data=d,index=[0])
 
 st.write(df.head())
 
-trial = 10 * hour_to_filter
-
-st.write(trial)
-
-new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
-st.markdown(hour_to_filter, unsafe_allow_html=True)
+st.form_submit_button(label="Submit", help=None, on_click=None, args=None, kwargs=None)
+#new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
+#st.markdown(hour_to_filter, unsafe_allow_html=True)
 
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
