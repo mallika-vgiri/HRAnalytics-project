@@ -16,9 +16,11 @@ Here's our first attempt at using data to create a table:
 
 import streamlit as st
 import pandas as pd
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
+import numpy as np
+import scipy.stats
+from scipy.stats import norm
+import altair as alt
 
-df
+st.set_page_config(
+    page_title="A/B Testing App", page_icon="📊", initial_sidebar_state="expanded"
+)
