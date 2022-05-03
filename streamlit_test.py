@@ -10,6 +10,7 @@ st.write("Predict whether an employee is at risk of leaving the organization usi
 
 st.image("https://blog.mavenlink.com/hubfs/employee-turnover-blog-image.png")
 
+st.header('Enter some key information below about the employee to predict whether the employee will leave the organization or not')
 with st.form(key='my_form'):
     satisfaction_level = st.number_input('What is the employees satisfaction level? (Enter a value between 0 to 1 where 0 - least satisfied 1 - most satisfied)', 0.50)
     last_evaluation = st.number_input("Number of years since the employee's last evaluation",0)
