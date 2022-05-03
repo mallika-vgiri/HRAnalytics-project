@@ -36,6 +36,12 @@ df=pd.DataFrame(data=d,index=[0])
 
 st.write(df.head())
 
+model_filename='Random_Forest.sav'
+
 Classifier_model = pickle.load(open(model_filename, 'rb'))
+
+Prediction = Classifier_model.predict(df)
+
+st.write(Prediction)
 
 
