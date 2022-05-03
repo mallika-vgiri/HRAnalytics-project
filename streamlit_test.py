@@ -25,3 +25,16 @@ hour_to_filter = st.slider('hour', 0, 23, 17)
 
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
 st.markdown(hour_to_filter, unsafe_allow_html=True)
+
+# Using object notation
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+
+# Using "with" notation
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
