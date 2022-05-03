@@ -15,7 +15,7 @@ hour_to_filter = st.slider('hour', 0, 23, 17)
 
 trial = 10 * hour_to_filter
 
-print(trial)
+st.write(trial)
 
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
 st.markdown(hour_to_filter, unsafe_allow_html=True)
