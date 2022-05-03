@@ -17,6 +17,7 @@ Here's our first attempt at using data to create a table:
 import streamlit as st
 import pandas as pd
 import numpy as np
+import time
 
 st.title('Uber pickups in NYC')
 st.write("Hello")
