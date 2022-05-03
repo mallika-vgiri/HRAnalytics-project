@@ -11,7 +11,14 @@ st.write("Predict whether an employee is at risk of leaving the organization usi
 st.image("https://blog.mavenlink.com/hubfs/employee-turnover-blog-image.png")
 
 
-hour_to_filter = st.slider('hour', 0, 23, 17)
+satisfaction_level = st.slider('satisfaction level', 0, 23, 17)
+last_evaluation = st.slider('last evaluation',0,50)
+number_of_projects = st.slider('number of projects',0,10)
+
+d = ('satisfaction_level':satisfaction_level,'last_evaluation':last_evaluation,'number_project':number_project)
+df=pd.DataFrame(data=d)
+
+st.write(df.head())
 
 trial = 10 * hour_to_filter
 
