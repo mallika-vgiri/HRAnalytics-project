@@ -18,4 +18,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.title('Uber pickups in NYC')
 st.write("Hello")
+
+hour_to_filter = st.slider('hour', 0, 23, 17)
