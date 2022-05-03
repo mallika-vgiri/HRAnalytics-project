@@ -46,3 +46,10 @@ with st.sidebar:
     with st.spinner("Loading..."):
         time.sleep(5)
     st.success("Done!")
+    
+container = st.container()
+container.write("This is inside the container")
+st.write("This is outside the container")
+
+# Now insert some more in the container
+container.write("This is inside too")
