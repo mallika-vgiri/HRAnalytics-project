@@ -20,7 +20,7 @@ d = {'satisfaction_level':satisfaction_level,'last_evaluation':last_evaluation,'
 df=pd.DataFrame(data=d,index=[0])
 
 st.write(df.head())
-
+"""
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
@@ -47,3 +47,4 @@ st.write("This is outside the container")
 
 # Now insert some more in the container
 container.write("This is inside too")
+"""
