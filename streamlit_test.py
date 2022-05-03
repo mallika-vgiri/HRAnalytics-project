@@ -21,7 +21,7 @@ with st.form(key='my_form'):
     submit_button = st.form_submit_button(label='Submit')
 
 def txt_num(val):
-    if val=='Yes'
+    if val ='Yes'
         return 1
     else
         return 0
